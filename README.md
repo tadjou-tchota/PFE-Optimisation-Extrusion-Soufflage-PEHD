@@ -92,33 +92,45 @@ Le travail porte sur l’étude de la relation entre :
 Une analyse de corrélation et de régression est utilisée afin d'étudier cette relation et d'analyser le **taux de carotte par rapport à la masse du produit**.
 
 Les résultats associés sont disponibles dans le dossier :
-`04_Analyses/Correlation/
+04_Analyses/Correlation/
 
 ---
 
 ## 📁 Organisation du dépôt
 
+```text
 01_Rapport/
+```
 
 Rapport complet du Projet de Fin d'Études.
 
+```text
 02_Presentation/
+```
 
 Présentation utilisée lors de la soutenance.
 
+```text
 03_Donnees/
+```
 
 Données expérimentales et fichiers associés, lorsque leur diffusion est autorisée.
 
+```text
 04_Analyses/
+```
 
 Analyses statistiques, corrélations, régressions, DOE et optimisation.
 
+```text
 05_Resultats/
+```
 
 Principaux graphiques, tableaux et résultats de l'étude.
 
+```text
 06_Illustrations/
+```
 
 Schémas, photographies et illustrations du procédé.
 
