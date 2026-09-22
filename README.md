@@ -1,5 +1,10 @@
 # PFE-Optimisation-Extrusion-Soufflage-PEHD
-Ce dépôt présente les travaux réalisés dans le cadre de mon Projet de Fin d’Études du Master 2 Risques Industriels et Maintenance de l’Université du Littoral Côte d’Opale. L’étude a été menée au sein de la Smart Factory Connected de HESTIM, autour d’un procédé d’extrusion-soufflage de flacons en polyéthylène haute densité.
+## Présentation
+
+Ce dépôt présente les travaux réalisés dans le cadre de mon **Projet de Fin d’Études (PFE)** du **Master 2 Risques Industriels et Maintenance** de l’**Université du Littoral Côte d’Opale (ULCO)**.
+
+L’étude a été menée au sein de la **Smart Factory Connected (SFC) de HESTIM**, autour d’un procédé d’**extrusion-soufflage de flacons en polyéthylène haute densité (PEHD)**.
+
 L’objectif général du projet est d’**étudier et d’optimiser expérimentalement les paramètres opératoires du procédé**, afin de mieux maîtriser sa variabilité et d’améliorer la qualité des flacons produits.
 ---
 ## 🎯 Objectifs du projet
@@ -91,8 +96,8 @@ Le travail porte sur l’étude de la relation entre :
 
 Une analyse de corrélation et de régression est utilisée afin d'étudier cette relation et d'analyser le **taux de carotte par rapport à la masse du produit**.
 
-Les résultats associés sont disponibles dans le dossier :
-04_Analyses/Correlation/
+Les résultats associés sont disponibles dans le dossier : 
+`04_Analyses/Correlation/`
 
 ---
 
