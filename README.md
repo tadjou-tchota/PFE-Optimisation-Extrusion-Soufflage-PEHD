@@ -1,203 +1,283 @@
-# PFE-Optimisation-Extrusion-Soufflage-PEHD
+# Optimisation expérimentale des paramètres opératoires d’un procédé d’extrusion-soufflage de flacons en PEHD
+
 ## Présentation
 
 Ce dépôt présente les travaux réalisés dans le cadre de mon **Projet de Fin d’Études (PFE)** du **Master 2 Risques Industriels et Maintenance** de l’**Université du Littoral Côte d’Opale (ULCO)**.
 
-L’étude a été menée au sein de la **Smart Factory Connected (SFC) de HESTIM**, autour d’un procédé d’**extrusion-soufflage de flacons en polyéthylène haute densité (PEHD)**.
+L’étude a été réalisée au sein de la **Smart Factory Connected (SFC) de HESTIM**, sur une machine d’**extrusion-soufflage de flacons en polyéthylène haute densité (PEHD)** alimentant deux stations de moulage : **AUTO2 et AUTO3**.
 
-L’objectif général du projet est d’**étudier et d’optimiser expérimentalement les paramètres opératoires du procédé**, afin de mieux maîtriser sa variabilité et d’améliorer la qualité des flacons produits.
+Le travail porte sur le **diagnostic de la variabilité du procédé** et sur l’**optimisation expérimentale de ses paramètres opératoires** à l’aide d’un plan d’expériences.
+
 ---
+
+## 🎯 Problématique
+
+L’analyse de l’historique de production a mis en évidence une variabilité importante de la matière extrudée, notamment au niveau de la **masse brute YM des produits finis**.
+
+Sur 147 mesures, la masse brute présente une moyenne de **19,233 g** et un écart-type de **1,600 g**. Le test d’Anderson-Darling donne une p-value de **0,010**, indiquant que la distribution observée n'est pas normale. Les cartes de contrôle mettent également en évidence des causes spéciales de variation.
+L'étude de la relation entre la masse brute **YM** et la masse de carotte **YC** montre par ailleurs que les variations de matière extrudée sont fortement associées aux variations de la carotte.
+
+La problématique du projet est ainsi formulée autour de la maîtrise des paramètres opératoires afin de **stabiliser le procédé d'extrusion-soufflage et de mieux maîtriser la formation de la paraison**.
+
+---
+
 ## 🎯 Objectifs du projet
 
-Les principaux objectifs de l’étude sont :
-* caractériser le fonctionnement du procédé d’extrusion-soufflage ;
-* identifier les principaux paramètres opératoires susceptibles d’influencer la qualité des flacons ;
-* étudier expérimentalement l’influence des paramètres du procédé ;
-* analyser la variabilité des caractéristiques des produits obtenus ;
-* établir des relations entre les paramètres opératoires et les réponses mesurées ;
-* déterminer une fenêtre expérimentale de fonctionnement ;
-* étudier l’influence du taux de matière PEHD recyclée sur le procédé et la qualité des flacons ;
-* analyser la relation entre la masse du flacon et la masse de la carotte ;
-* identifier des conditions permettant d'améliorer la maîtrise du procédé.
----
-## 🔬 Problématique
+Les principaux objectifs sont :
 
-Le procédé d’extrusion-soufflage étudié présente une variabilité pouvant affecter les caractéristiques des flacons produits.
-L’étude vise donc à répondre à la problématique suivante :
-
-> **Comment identifier et optimiser expérimentalement les paramètres opératoires de l’extrusion-soufflage afin de réduire la variabilité du procédé et d’améliorer la qualité des flacons en PEHD ?**
-
-Une attention particulière est également portée à l’utilisation de matière PEHD recyclée et à son influence sur le procédé et les caractéristiques des produits obtenus.
+* diagnostiquer le fonctionnement actuel du procédé d'extrusion-soufflage ;
+* caractériser et quantifier la variabilité du procédé à partir des données de production ;
+* analyser la variabilité de la **masse brute extrudée YM** ;
+* étudier la relation entre la masse brute **YM** et la masse de carotte **YC** ;
+* identifier les facteurs susceptibles d'expliquer la variabilité du procédé ;
+* construire un plan d'expériences permettant d'étudier simultanément plusieurs paramètres ;
+* identifier les facteurs ayant une influence significative sur la réponse étudiée ;
+* quantifier l'influence des paramètres opératoires sur la **longueur de la paraison** ;
+* déterminer une combinaison théorique de réglages permettant d'atteindre une longueur cible de paraison ;
+* proposer une **fenêtre de réglage opérationnelle**.
 
 ---
 
-## ⚙️ Procédé étudié
+# 🔬 Démarche expérimentale
 
-Le travail porte sur une machine d’**extrusion-soufflage** utilisée pour la fabrication de flacons en PEHD au sein de la Smart Factory Connected de HESTIM.
-Les paramètres étudiés comprennent notamment des paramètres liés :
+La démarche adoptée peut être résumée comme suit :
 
-* à la pression ;
-* aux températures du procédé ;
-* au chauffage de la tête de filière ;
-* aux conditions de fonctionnement de la machine ;
-* à la matière utilisée.
-
-Les niveaux des facteurs et les conditions expérimentales sont présentés dans les documents et données associés au projet.
-
----
-
-## 🧪 Démarche expérimentale
-
-La démarche suivie peut être résumée comme suit :
-
-Observation du procédé
+```text
+Analyse du procédé
         ↓
-Identification de la problématique
+Collecte et analyse des données historiques
         ↓
-Définition des variables et réponses
+Diagnostic de la variabilité
         ↓
-Planification des essais expérimentaux
+Analyse de la masse brute YM
+        ↓
+Étude de la relation YM / YC
+        ↓
+Identification des causes potentielles
+        ↓
+Sélection des facteurs opératoires
+        ↓
+Plan d'expériences fractionnaire
         ↓
 Réalisation des essais
         ↓
-Collecte des données
+Mesure de la longueur de la paraison
         ↓
-Analyse statistique
+Analyse statistique sous Minitab
+        ↓
+Identification des facteurs influents
         ↓
 Modélisation
         ↓
-Détermination d'une fenêtre expérimentale
+Optimisation par fonction de désirabilité
         ↓
-Validation expérimentale
-
-## 📊 Méthodes d’analyse
-
-Les données expérimentales ont été exploitées à l’aide de méthodes statistiques et d’outils d’analyse permettant notamment :
-
-* l’analyse descriptive des données ;
-* l’étude des corrélations entre variables ;
-* la régression ;
-* l’analyse des résidus ;
-* l’analyse de la variabilité ;
-* le plan d’expériences (DOE) ;
-* l’identification des effets des paramètres opératoires ;
-* la recherche d’une fenêtre expérimentale optimale.
-
-Une partie des analyses a été réalisée avec **Minitab** et **Microsoft Excel**.
+Détermination d'une fenêtre de réglage
+```
 
 ---
 
-## 🔎 Étude de la masse de carotte
+# 📊 1. Diagnostic de la variabilité
 
-Le travail porte sur l’étude de la relation entre :
+La première partie de l'étude repose sur l'exploitation de **147 observations issues de la production**.
 
-* la masse du flacon ;
-* la masse de la carotte.
+La grandeur principalement utilisée pour caractériser la variabilité du procédé est la **masse brute extrudée YM**, correspondant à la masse totale du flacon brut avec sa carotte.
 
-Une analyse de corrélation et de régression est utilisée afin d'étudier cette relation et d'analyser le **taux de carotte par rapport à la masse du produit**.
+L'analyse comprend notamment :
 
-Les résultats associés sont disponibles dans le dossier : 
-`04_Analyses/Correlation/`
+* statistiques descriptives ;
+* analyse de la dispersion ;
+* carte de contrôle I-MR ;
+* test de normalité d'Anderson-Darling ;
+* analyse comparative des stations AUTO2 et AUTO3 ;
+* étude de corrélation entre la masse brute YM et la masse de carotte YC ;
+* régression de la masse de carotte en fonction de la masse brute.
 
----
-
-## 📁 Organisation du dépôt
-
-```text
-01_Rapport/
-```
-
-Rapport complet du Projet de Fin d'Études.
-
-```text
-02_Presentation/
-```
-
-Présentation utilisée lors de la soutenance.
-
-```text
-03_Donnees/
-```
-
-Données expérimentales et fichiers associés, lorsque leur diffusion est autorisée.
-
-```text
-04_Analyses/
-```
-
-Analyses statistiques, corrélations, régressions, DOE et optimisation.
-
-```text
-05_Resultats/
-```
-
-Principaux graphiques, tableaux et résultats de l'étude.
-
-```text
-06_Illustrations/
-```
-
-Schémas, photographies et illustrations du procédé.
+Les résultats montrent une dispersion importante de la masse brute et un procédé qui n'est pas statistiquement maîtrisé dans les conditions initiales étudiées.
 
 ---
 
-## 📈 Principaux résultats
+# 🔎 2. Relation entre masse brute et masse de carotte
 
-L'étude a permis de :
+Une analyse de corrélation et de régression a été réalisée entre :
 
-* caractériser expérimentalement le procédé étudié ;
-* analyser l'influence des paramètres opératoires sur les réponses étudiées ;
-* mettre en évidence les relations entre certaines variables du procédé et les caractéristiques des flacons ;
-* définir une fenêtre expérimentale de fonctionnement à partir des essais réalisés ;
-* analyser la relation entre la masse du produit et la masse de la carotte.
+* **YM** : masse totale du flacon brut avec carotte ;
+* **YC** : masse de la carotte inférieure ;
+* **YN** : masse du flacon net ébavuré.
 
-Les résultats détaillés, les modèles statistiques et les analyses complémentaires sont disponibles dans le rapport et les dossiers d'analyse.
+La relation physique utilisée est :
 
----
+```text
+YM = YC + YN
+```
 
-## 🧰 Outils utilisés
+L'analyse montre notamment que les variations de la masse brute sont fortement associées aux variations de la masse de carotte. Les modèles de régression donnent des pentes de **0,48 g/g pour AUTO2** et **0,80 g/g pour AUTO3**.
 
-| Domaine                | Outils / méthodes                |
-| ---------------------- | -------------------------------- |
-| Analyse statistique    | Minitab                          |
-| Traitement des données | Microsoft Excel                  |
-| Plan d'expériences     | DOE                              |
-| Modélisation           | Régression                       |
-| Analyse de variabilité | Statistiques / analyse graphique |
-| Amélioration continue  | DMAIC / Six Sigma                |
-| Analyse des risques    | AMDEC                            |
-| Procédé étudié         | Extrusion-soufflage PEHD         |
+Cette analyse permet de caractériser le transfert de la variabilité de la matière extrudée vers la carotte.
 
 ---
 
-## 📚 Documents principaux
+# 🧪 3. Plan d'expériences
+
+Afin d'identifier les paramètres opératoires responsables des variations observées, un **plan factoriel fractionnaire de résolution IV** a été mis en œuvre.
+
+### Facteurs étudiés
+
+Six facteurs opératoires ont été retenus :
+
+| Facteur | Description                                                 |
+| ------- | ----------------------------------------------------------- |
+| P       | Pression de maintien de la paraison                         |
+| T1      | Température de la zone 1 du fourreau                        |
+| T2      | Température de la zone 2 du fourreau                        |
+| T3      | Température de la zone 3 du fourreau                        |
+| V       | Vitesse d'extrusion                                         |
+| Tc      | Niveau de réglage du temps de chauffe de la tête de filière |
+
+Le plan comprend **16 conditions expérimentales**, avec **cinq mesures successives de la longueur de paraison pour chaque condition**.
+
+---
+
+# 📏 4. Réponse expérimentale : longueur de la paraison
+
+Pour la phase expérimentale, la **grandeur de réponse choisie est la longueur de la paraison**.
+
+Elle constitue la grandeur physique directement étudiée pour évaluer l'effet des paramètres opératoires.
+
+L'objectif d'optimisation est de déterminer les conditions permettant d'atteindre une **longueur cible de 130 mm**.
+
+La logique de l'étude est donc :
+
+```text
+Paramètres opératoires X
+        ↓
+Procédé d'extrusion-soufflage
+        ↓
+Longueur de la paraison Y
+        ↓
+Maîtrise de la formation de la paraison
+        ↓
+Meilleure maîtrise de la distribution de matière
+```
+
+---
+
+# 📈 5. Analyse statistique
+
+Les résultats expérimentaux ont été analysés sous **Minitab**.
+
+Les analyses comprennent notamment :
+
+* estimation des effets ;
+* diagramme de Pareto ;
+* droite de Henry des effets normalisés ;
+* analyse de variance ;
+* analyse des résidus ;
+* analyse des intervalles ;
+* modélisation de la réponse ;
+* optimisation par fonction de désirabilité.
+
+Les résultats montrent que la **vitesse d'extrusion V** est le facteur le plus influent sur la longueur de la paraison dans le domaine expérimental étudié. Les températures **T1, T2 et T3** présentent également une influence statistiquement significative. En revanche, **P** et **Tc** ne présentent pas d'effet statistiquement significatif dans ce domaine expérimental.
+
+---
+
+# ⚙️ 6. Optimisation
+
+Une optimisation par **fonction de désirabilité** a été réalisée sous Minitab afin de rechercher les conditions permettant d'atteindre une longueur de paraison cible de **130 mm**.
+
+La condition théorique obtenue comprend notamment :
+
+* **V ≈ 13,15 Hz**
+* **T1 ≈ 188,0 °C**
+* **T2 ≈ 180,5 °C**
+* **T3 ≈ 172,5 °C**
+
+Une fenêtre de réglage opérationnelle a ainsi été proposée.
+
+> **Important :** l'essai physique de confirmation n'a pas pu être réalisé en raison de l'indisponibilité de la machine. Les réglages proposés doivent donc encore être validés expérimentalement en conditions réelles.
+
+---
+
+# 🏭 Procédé étudié
+
+Le procédé étudié est une ligne d'extrusion-soufflage de flacons en PEHD comprenant deux stations de moulage :
+
+* **AUTO2**
+* **AUTO3**
+
+La machine produit une paraison en PEHD qui est ensuite conformée dans le moule par soufflage.
+
+Le travail s'est concentré sur la maîtrise de la formation de la paraison et sur l'influence des paramètres opératoires de l'extrudeuse.
+
+---
+
+# 📁 Organisation du dépôt
+
+```text
+PFE-Optimisation-Extrusion-Soufflage-PEHD/
+│
+├── README.md
+│
+├── 01_Rapport/
+│   └── Rapport_PFE.pdf
+│
+├── 02_Presentation/
+│   └── Presentation_PFE.pdf
+│
+├── 03_Donnees/
+│   └── Donnees_experimentales.xlsx
+│
+├── 04_Analyses/
+│   ├── Diagnostic_variabilite/
+│   ├── Correlation_YM_YC/
+│   ├── DOE/
+│   ├── Regression/
+│   └── Optimisation/
+│
+├── 05_Resultats/
+│   ├── Graphiques/
+│   └── Tableaux/
+│
+└── 06_Illustrations/
+```
+
+---
+
+# 🧰 Outils et méthodes
+
+| Domaine                     | Outils / méthodes         |
+| --------------------------- | ------------------------- |
+| Traitement des données      | Microsoft Excel           |
+| Analyse statistique         | Minitab                   |
+| Maîtrise statistique        | Carte I-MR                |
+| Normalité                   | Anderson-Darling          |
+| Analyse de relations        | Corrélation / régression  |
+| Analyse expérimentale       | DOE                       |
+| Identification des facteurs | Pareto / ANOVA            |
+| Modélisation                | Régression                |
+| Optimisation                | Fonction de désirabilité  |
+| Analyse des causes          | Diagramme d'Ishikawa – 5M |
+
+---
+
+# 📚 Documents
 
 ### Rapport de PFE
 
-📄 [Consulter le rapport](01_Rapport/Rapport_PFE.pdf)
+📄 [Rapport complet](01_Rapport/Rapport_PFE.pdf)
 
 ### Présentation de soutenance
 
-🎓 [Consulter la présentation](02_Presentation/Presentation_PFE.pdf)
+🎓 [Présentation](02_Presentation/Presentation_PFE.pdf)
 
-### Données expérimentales
+### Données et analyses
 
 📊 [Données expérimentales](03_Donnees/Donnees_experimentales.xlsx)
 
-> La mise à disposition des données est soumise aux éventuelles contraintes de confidentialité et d'autorisation de diffusion.
+> La diffusion des données, des photographies et des documents techniques doit respecter les éventuelles contraintes de confidentialité et d'autorisation de HESTIM.
 
 ---
 
-## 🏭 Environnement du projet
-
-**Smart Factory Connected – HESTIM**
-Casablanca, Maroc
-
-Le projet a été réalisé dans un environnement pédagogique et technologique intégrant des équipements industriels, des systèmes automatisés et des moyens d'expérimentation permettant l'étude de procédés industriels.
-
----
-
-## 🎓 Formation
+# 🎓 Formation
 
 **Master 2 – Risques Industriels et Maintenance**
 Université du Littoral Côte d’Opale (ULCO)
@@ -205,20 +285,23 @@ Université du Littoral Côte d’Opale (ULCO)
 
 **Projet de Fin d’Études – 2026**
 
+**Thème :**
+*Optimisation expérimentale des paramètres opératoires d’un procédé d’extrusion-soufflage de flacons en PEHD*
+
 ---
 
-## 👤 Auteur
+# 👤 Auteur
 
 **Tadjou TCHOTA**
 
-Ingénierie de maintenance · Automatisation industrielle · Systèmes industriels intelligents
+Automatisation industrielle · Maintenance · Analyse statistique · Optimisation des procédés industriels
 
 📍 Casablanca, Maroc
 
 ---
 
-## 🔗 Projet
+## 🔗 À propos du projet
 
-Ce dépôt constitue une synthèse technique et scientifique du travail réalisé dans le cadre du Projet de Fin d'Études.
+Ce dépôt constitue une synthèse technique et scientifique du Projet de Fin d’Études.
 
-Il a pour objectif de faciliter la consultation de la démarche expérimentale, des analyses et des résultats du projet.
+Il présente la démarche adoptée depuis le **diagnostic de la variabilité du procédé** jusqu'à la **détermination théorique d'une fenêtre de réglage**, en passant par la caractérisation statistique, le plan d'expériences, l'analyse des facteurs et l'optimisation.
