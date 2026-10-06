@@ -197,7 +197,7 @@ Une fenêtre de réglage opérationnelle a ainsi été proposée.
 
 ---
 
-# 🏭 Procédé étudié
+# Procédé étudié
 
 Le procédé étudié est une ligne d'extrusion-soufflage de flacons en PEHD comprenant deux stations de moulage :
 
