@@ -10,7 +10,7 @@ Le travail porte sur le **diagnostic de la variabilité du procédé** et sur l�
 
 ---
 
-## 🎯 Problématique
+## Problématique
 
 L’analyse de l’historique de production a mis en évidence une variabilité importante de la matière extrudée, notamment au niveau de la **masse brute YM des produits finis**.
 
@@ -21,7 +21,7 @@ La problématique du projet est ainsi formulée autour de la maîtrise des param
 
 ---
 
-## 🎯 Objectifs du projet
+## Objectifs du projet
 
 Les principaux objectifs sont :
 
@@ -38,7 +38,7 @@ Les principaux objectifs sont :
 
 ---
 
-# 🔬 Démarche expérimentale
+# Démarche expérimentale
 
 La démarche adoptée peut être résumée comme suit :
 
@@ -76,7 +76,7 @@ Détermination d'une fenêtre de réglage
 
 ---
 
-# 📊 1. Diagnostic de la variabilité
+# 1. Diagnostic de la variabilité
 
 La première partie de l'étude repose sur l'exploitation de **147 observations issues de la production**.
 
@@ -96,7 +96,7 @@ Les résultats montrent une dispersion importante de la masse brute et un procé
 
 ---
 
-# 🔎 2. Relation entre masse brute et masse de carotte
+# 2. Relation entre masse brute et masse de carotte
 
 Une analyse de corrélation et de régression a été réalisée entre :
 
@@ -116,7 +116,7 @@ Cette analyse permet de caractériser le transfert de la variabilité de la mati
 
 ---
 
-# 🧪 3. Plan d'expériences
+# 3. Plan d'expériences
 
 Afin d'identifier les paramètres opératoires responsables des variations observées, un **plan factoriel fractionnaire de résolution IV** a été mis en œuvre.
 
@@ -137,7 +137,7 @@ Le plan comprend **16 conditions expérimentales**, avec **cinq mesures successi
 
 ---
 
-# 📏 4. Réponse expérimentale : longueur de la paraison
+# 4. Réponse expérimentale : longueur de la paraison
 
 Pour la phase expérimentale, la **grandeur de réponse choisie est la longueur de la paraison**.
 
@@ -161,7 +161,7 @@ Meilleure maîtrise de la distribution de matière
 
 ---
 
-# 📈 5. Analyse statistique
+# 5. Analyse statistique
 
 Les résultats expérimentaux ont été analysés sous **Minitab**.
 
@@ -180,7 +180,7 @@ Les résultats montrent que la **vitesse d'extrusion V** est le facteur le plus 
 
 ---
 
-# ⚙️ 6. Optimisation
+# 6. Optimisation
 
 Une optimisation par **fonction de désirabilité** a été réalisée sous Minitab afin de rechercher les conditions permettant d'atteindre une longueur de paraison cible de **130 mm**.
 
@@ -210,7 +210,7 @@ Le travail s'est concentré sur la maîtrise de la formation de la paraison et s
 
 ---
 
-# 📁 Organisation du dépôt
+# Organisation du dépôt
 
 ```text
 PFE-Optimisation-Extrusion-Soufflage-PEHD/
@@ -242,7 +242,7 @@ PFE-Optimisation-Extrusion-Soufflage-PEHD/
 
 ---
 
-# 🧰 Outils et méthodes
+# Outils et méthodes
 
 | Domaine                     | Outils / méthodes         |
 | --------------------------- | ------------------------- |
@@ -259,27 +259,27 @@ PFE-Optimisation-Extrusion-Soufflage-PEHD/
 
 ---
 
-# 📚 Documents
+# Documents
 
 ### Rapport de PFE
 
-📄 [Rapport complet](01_Rapport/Rapport_PFE.pdf)
+[Rapport complet](01_Rapport/Rapport_PFE.pdf)
 
 ### Présentation de soutenance
 
-🎓 [Présentation](02_Presentation/Presentation_PFE.pdf)
+ [Présentation](02_Presentation/Presentation_PFE.pdf)
 
 ### Données et analyses
 
-📊 [Données expérimentales](03_Donnees/Donnees_experimentales.xlsx)
+[Données expérimentales](03_Donnees/Donnees_experimentales.xlsx)
 
 > La diffusion des données, des photographies et des documents techniques doit respecter les éventuelles contraintes de confidentialité et d'autorisation de HESTIM.
 
 ---
 
-# 🎓 Formation
+# Formation
 
-**Master 2 – Risques Industriels et Maintenance**
+**Master – Risques Industriels et Maintenance**
 Université du Littoral Côte d’Opale (ULCO)
 2024–2026
 
@@ -290,17 +290,17 @@ Université du Littoral Côte d’Opale (ULCO)
 
 ---
 
-# 👤 Auteur
+# Auteur
 
 **Tadjou TCHOTA**
 
 Automatisation industrielle · Maintenance · Analyse statistique · Optimisation des procédés industriels
 
-📍 Casablanca, Maroc
+Casablanca, Maroc
 
 ---
 
-## 🔗 À propos du projet
+## À propos du projet
 
 Ce dépôt constitue une synthèse technique et scientifique du Projet de Fin d’Études.
 
